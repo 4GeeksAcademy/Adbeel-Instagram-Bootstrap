@@ -58,7 +58,10 @@
 
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="https://cdn-icons-png.flaticon.com/128/126/126472.png" alt="" width="30" height="24"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                      </svg>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenu2">
                         <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -72,6 +75,115 @@
               </div>
             </div>
           </nav>    
+
+          <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="home" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3" viewBox="0 0 16 16">
+                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5zM1.5 1a.5.5 0 0 0-.5.5V5h4V1zM5 6H1v4h4zm1 4h4V6H6zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5zm1 0v4h4v-4zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11zm0-1h4V6h-4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11zm-1 0V1H6v4z"/>
+              </svg></button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#feed" type="button" role="tab" aria-controls="profile" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"/>
+              </svg></button>
+            </li>
+
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="home-tab">
+              
+              <div class="container-fluid mt-3">
+                <div class="row justify-content-center">
+                  <div class="col-4 ">
+                    <div class="card" style="width: 30rem;">
+                      <img src="https://images.stockcake.com/public/3/9/9/3998329c-56bc-431b-917c-3f71085298df_large/photographer-in-nature-stockcake.jpg" class="card-img-top" alt="..." width="450" height="450">
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card" style="width: 30rem;">
+                      <img src="https://images.stockcake.com/public/1/1/d/11df49ae-c8de-4aa9-b757-c467b47d96ea_large/waterfall-nature-walk-stockcake.jpg" class="card-img-top" alt="..." width="450" height="450">
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card border-white" style="width: 30rem;">
+                      <img src="https://images.stockcake.com/public/a/f/1/af150bda-b6e8-413c-bdbb-febff23bb31c_large/businessman-in-city-stockcake.jpg" alt="" width="450" height="450"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center mt-3">
+                  <div class="col-4 ">
+                    <div class="card" style="width: 30rem;">
+                      <img src="https://images.stockcake.com/public/1/b/7/1b7bdb9f-08e3-4b9b-bd23-644ef81077d2_large/mysterious-foggy-ship-stockcake.jpg" class="card-img-top" alt="..." width="450" height="450">
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card" style="width: 30rem;">
+                      <img src="https://images.stockcake.com/public/0/c/0/0c00b3d3-8819-4bb1-abc9-c89e3d7aaf9d_large/man-using-laptop-stockcake.jpg" class="card-img-top" alt="..." width="450" height="450">
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card border-white" style="width: 30rem;">
+                      <img src="https://images.stockcake.com/public/3/4/8/34816b8d-d323-4d7f-b9cb-5d5967d21a22_large/analyzing-data-intently-stockcake.jpg" alt="" width="450" height="450"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center mt-3 mb-3">
+                  <div class="col-4 ">
+                    <div class="card" style="width: 30rem;">
+                      <img src="https://images.stockcake.com/public/f/e/8/fe83bead-72a7-42b5-b4c1-ebc744474815_large/street-food-vendor-stockcake.jpg" class="card-img-top" alt="..." width="450" height="450"/>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card" style="width: 30rem;">
+                      <img src="https://images.stockcake.com/public/5/b/c/5bc84c85-5d1c-4dd4-a5e3-257f5ece1cff_large/students-in-lab-stockcake.jpg" class="card-img-top" alt="..." width="450" height="450"/>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card border-white" style="width: 30rem;">
+                      <img src="https://images.stockcake.com/public/2/e/d/2ede3b9d-825e-4e7c-86b4-3eec75992a5d_large/brainstorming-session-progress-stockcake.jpg" alt="" width="450" height="450"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="tab-pane fade" id="feed" role="tabpanel" aria-labelledby="profile-tab">
+              
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-6 justify-content-center">
+                    <div class="card" style="width: 20rem;">
+                      <div class="card-header">
+                        Featured
+                      </div>
+                      <img src="https://images.stockcake.com/public/3/9/9/3998329c-56bc-431b-917c-3f71085298df_large/photographer-in-nature-stockcake.jpg" class="card-img-top" alt="..."width="450" height="450"/>
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Featured
+                  </div>
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              
+
+            </div>
+          </div>
+          
     </div>
     
  </body>
